@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-    
+
     <style>
       .oswald {
         font-family: "Oswald", sans-serif;
@@ -21,11 +21,13 @@
         line-height: 1.4;
         width: 100%;
         height: 100%;
-        margin: 20px;
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #f4f4f4;
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
       h1,
       h2 {
@@ -49,13 +51,14 @@
       }
       /* --- A4 Paper Size Container --- */
       .container {
-        width: 595px; /* A4 width at 72 DPI */
-        min-height: 842px; /* A4 height at 72 DPI */
+        width: 210mm; /* A4 width */
+        height: 297mm; /* A4 height */
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: row;
+        overflow: hidden; /* Hide any potential overflow */
       }
       .profile {
         text-align: center;
@@ -108,7 +111,7 @@
         color: white;
         font-size: 8px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        padding: 6px 0;
+        padding: 4px 0;
       }
       .detail {
         width: 100%;
@@ -132,8 +135,8 @@
       .section-body {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        padding-top: 10px;
+        gap: 5px;
+        padding-top: 5px;
       }
       .education-description {
         display: grid;
@@ -163,9 +166,8 @@
         font-weight: bold;
         font-size: 8px;
         text-align: left;
-        margin-top: 8px;
+        margin-top: 5px;
         margin-bottom: 2px;
-
         color: #fff;
         text-transform: uppercase;
       }
@@ -181,12 +183,14 @@
       @media print {
         body {
           margin: 0;
+          padding: 0;
           background-color: #ffffff;
         }
         .container {
           box-shadow: none;
           margin: 0;
           width: 100%;
+          height: 100%;
           border-radius: 0;
         }
         .info,
@@ -200,10 +204,10 @@
     <div class="container oswald">
       <div class="profile">
         <img
-          src="assets/photo_card.jpg"
+          src="https://github.com/Leeseangbok/personal_portfolio/blob/main/assets/photo_card.jpg?raw=true"
           alt="Simthol Chanrodararithy"
           class="profile-image"
-          style="width: 140px; height: 160px; border-radius: 8px;"
+          style="width: 140px; height: 160px; border-radius: 8px"
         />
         <div class="info">
           <h1 class="header-info">Personal</h1>
@@ -463,60 +467,60 @@
             />
             <h3>PROJECTS</h3>
           </div>
-            <div class="section-body">
+          <div class="section-body">
             <div class="detail">
               <div class="education-description">
-              <img
-                class="icon-bullet"
-                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5bGluZSBwb2ludHM9IjkgMTggMTUgMTIgOSAyIi8+PC9zdmc+Cg=="
-                alt="bullet"
-              />
-              <p style="font-weight: bold">
-                E-Lib (Online Book Reading) School Project
-              </p>
+                <img
+                  class="icon-bullet"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5bGluZSBwb2ludHM9IjkgMTggMTUgMTIgOSAyIi8+PC9zdmc+Cg=="
+                  alt="bullet"
+                />
+                <p style="font-weight: bold">
+                  E-Lib (Online Book Reading) School Project
+                </p>
 
-              <span></span>
-              <p class="school">
-                Full-Stack web application with Laravel, PHP and Blade
-              </p>
-              <span></span>
-              <p class="school">
-                Implemented API from Gutenberg to fetch books data
-              </p>
-              <span></span>
-              <p class="school">
-                Implemented book filters, user authentication using Breeze
-              </p>
+                <span></span>
+                <p class="school">
+                  Full-Stack web application with Laravel, PHP and Blade
+                </p>
+                <span></span>
+                <p class="school">
+                  Implemented API from Gutenberg to fetch books data
+                </p>
+                <span></span>
+                <p class="school">
+                  Implemented book filters, user authentication using Breeze
+                </p>
               </div>
               <a href="https://www.elibbookread.me/">elibbookread.me</a>
             </div>
             <div class="detail">
               <div class="education-description">
-              <img
-                class="icon-bullet"
-                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5bGluZSBwb2ludHM9IjkgMTggMTUgMTIgOSAyIi8+PC9zdmc+Cg=="
-                alt="bullet"
-              />
-              <p style="font-weight: bold">
-                Personal Portfolio Website
-              </p>
+                <img
+                  class="icon-bullet"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5bGluZSBwb2ludHM9IjkgMTggMTUgMTIgOSAyIi8+PC9zdmc+Cg=="
+                  alt="bullet"
+                />
+                <p style="font-weight: bold">Personal Portfolio Website</p>
 
-              <span></span>
-              <p class="school">
-                Responsive portfolio built with HTML, CSS, and JavaScript
-              </p>
-              <span></span>
-              <p class="school">
-                Showcases projects, skills, and contact information
-              </p>
-              <span></span>
-              <p class="school">
-                Designed for clean layout and easy navigation
-              </p>
+                <span></span>
+                <p class="school">
+                  Responsive portfolio built with HTML, CSS, and JavaScript
+                </p>
+                <span></span>
+                <p class="school">
+                  Showcases projects, skills, and contact information
+                </p>
+                <span></span>
+                <p class="school">
+                  Designed for clean layout and easy navigation
+                </p>
               </div>
-              <a href="https://github.com/Simthol/portfolio_html_css">github.com/Simthol/portfolio_html_css</a>
+              <a href="https://github.com/Simthol/portfolio_html_css"
+                >github.com/Simthol/portfolio_html_css</a
+              >
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>

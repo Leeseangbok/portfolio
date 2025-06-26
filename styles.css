@@ -363,6 +363,19 @@ body {
   position: relative;
 }
 
+.cv-link{
+  padding: 10px 15px;
+  background-color: #ff0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cv-link:hover {
+  background-color: #e60000;
+}
+
 .contact-link-box:hover {
   background-color: #3a3939;
   transform: translateY(-5px);
